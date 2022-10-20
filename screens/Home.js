@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput, FlatList, Image, TouchableOpacity  } from 'react-native';
+import assets from "./assets";
 export default function Home() {
   const Food = ([
 
     {
       id: "1",
-      image: require("./screens/assets/a.png"),
+      image: require("./assets/a.png"),
       name: "Peter Lughes",
       price: "44.00",
       img2: require("./assets/vh.png"),
@@ -13,7 +14,7 @@ export default function Home() {
     },
     {
       id: "2",
-      image: require("./screens/assets/a.png"),
+      image: require("./assets/a.png"),
       name: "Peter Lughes",
       price: "44.00",
       img2: require("./assets/vh.png"),
@@ -21,28 +22,28 @@ export default function Home() {
     },
     {
       id: "3",
-      image: require("./screens/assets/a.png"),
+      image: require("./assets/a.png"),
       name: "Peter Lughes",
       price: "44.00",
       img2: require("./assets/vh.png"),
       img3: require("./assets/b.png")
     }, {
       id: "4",
-      image: require("./screens/assets/a.png"),
+      image: require("./assets/a.png"),
       name: "Peter Lughes",
       price: "44.00",
       img2: require("./assets/vh.png"),
       img3: require("./assets/b.png")
     }, {
       id: "5",
-      image: require("./screens/assets/a.png"),
+      image: require("./assets/a.png"),
       name: "Peter Lughes",
       price: "44.00",
       img2: require("./assets/vh.png"),
       img3: require("./assets/b.png")
     }, {
       id: "6",
-      image: require("./screens/assets/a.png"), 
+      image: require("./sassets/a.png"), 
       name: "Peter Lughes",
       price: "44.00",
       img2: require("./assets/vh.png"),
@@ -58,9 +59,7 @@ export default function Home() {
           </Image>
           <Text style={{ marginRight: 10, width: 140, }}>{item.name}</Text>
           <Text style={{ marginRight: 10, width: 140, }}>{item.price}</Text>
-          {/* <Image source={item.img2} style={{ width: 0, height: 100 }}>
-
-          </Image> */}
+    
         </View>
         <View style={{ height:200}}>
           <Image source={item.image} style={{ width: 100, height: 100 }}>
